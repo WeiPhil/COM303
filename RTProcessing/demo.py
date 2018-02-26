@@ -41,10 +41,10 @@ def poll_keyboard():
 
 def print_choices(choices, key):
     # print available processing choices
-    print '\n\nnow using processor ', choices[key]
-    print "available choices:"
+    print('\n\nnow using processor ', choices[key])
+    print("available choices:")
     for ix in choices:
-        print ix, ') ', choices[ix]
+        print(ix, ') ', choices[ix])
 
 
 
@@ -81,8 +81,8 @@ def main():
         output=True,
         stream_callback=callback)
 
-    print "\nstarting audio processing"
-    print "press Q at any time to quit\n"
+    print("\nstarting audio processing")
+    print("press Q at any time to quit\n")
 
     # default processing module is the "no processing"
     key = 0
